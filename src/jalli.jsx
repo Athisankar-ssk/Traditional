@@ -4,7 +4,7 @@ function Jallikattu(pors){
         <div className="full">
             <div className='Bull'>
             <img src={pors.img} alt="" />
-            <h3>{pors.BullName}</h3>
+            <button className="bull-btn">{pors.BullName}</button>
             <h4>{pors.OwnerName}</h4>
             <h4>{pors.District}</h4>
             </div>
