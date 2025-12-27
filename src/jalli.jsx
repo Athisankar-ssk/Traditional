@@ -1,12 +1,14 @@
 
-function Jallikattu(pors){
+import { useNavigate } from "react-router-dom";
+function Jallikattu(porps){
+ const navigate = useNavigate();
       return(
-        <div className="full">
+        porps.img && <div className="full">
             <div className='Bull'>
-            <img src={pors.img} alt="" />
-            <button className="bull-btn" >{pors.BullName}</button>
-            <h4>{pors.OwnerName}</h4>
-            <h4>{pors.District}</h4>
+            <img src={porps.img} alt="" />
+            <button className="bull-btn" onClick={()=>navigate("/details",{state:porps})}>{porps.BullName}</button>
+            <h4>{porps.OwnerName}</h4>
+            <h4>{porps.District}</h4>
             </div>
         </div>
       );
