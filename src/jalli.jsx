@@ -8,6 +8,7 @@ function Jallikattu(props) {
       <div className="full">
         <div className="Bull">
           <img src={props.img} alt={props.BullName} />
+         
           <button className="bull-btn"
             onClick={() =>
               navigate("/details", {
@@ -21,12 +22,11 @@ function Jallikattu(props) {
                 }
               })
             }
-          >
-            {props.BullName} </button>
+          > {props.BullName} </button>
 
           <h4>{props.OwnerName}</h4>
           <h4>{props.District}</h4>
-          <button onClick={() => props.remove(props.Bullid)}>Remove</button>
+          <button className="remove-btn" onClick={() => props.remove(props.Bullid)}>Remove</button>
         </div>
       </div>
     )

@@ -1,7 +1,7 @@
 .Bull{
-  background-color: aquamarine;
+  background-color: rgb(255, 251, 127);
   max-width: 200px;
-  border: 4px solid rgb(30, 159, 123);
+  border: 4px solid rgb(206, 231, 15);
   border-radius: 8px;
   font-family: 'Times New Roman', Times, serif;
   padding: 1em;
@@ -21,12 +21,26 @@
 }
 
 .bull-btn{
-  background-color: rgba(0, 255, 145, 0.724);
-  border: 4px solid rgba(255, 153, 0, 0.833);
+  background-color: rgb(255, 251, 127);
+  border: 4px solid rgb(183, 30, 30);
   border-radius: 8px;
   cursor: pointer;
 }
 
 .bull-btn:hover {
-    background-color: rgb(43, 202, 11);
+    background-color: rgb(200, 218, 129);
+}
+
+body{
+  background: url() ;
+ background-color: antiquewhite;
+}
+
+.remove-btn{
+  color: black;
+  background-color:  rgb(200, 218, 129)  ;
+}
+
+.remove-btn:hover{
+  cursor: pointer;
 }
