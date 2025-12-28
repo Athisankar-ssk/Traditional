@@ -1,13 +1,13 @@
 .Bull{
-  background-color: rgb(255, 251, 127);
+  background-color:#FFFFFF;
   max-width: 200px;
-  border: 4px solid rgb(206, 231, 15);
+  border: 4px solid#BDBDBD;
   border-radius: 8px;
   font-family: 'Times New Roman', Times, serif;
   padding: 1em;
   margin: 50px;
   text-align: center;
-  
+  color: #212121;
 }
 
 .Bull img{
@@ -21,24 +21,25 @@
 }
 
 .bull-btn{
-  background-color: rgb(255, 251, 127);
-  border: 4px solid rgb(183, 30, 30);
+  background-color:#74b4ad;
+  border: 4px solid rgb(90, 124, 48);
   border-radius: 8px;
   cursor: pointer;
 }
 
 .bull-btn:hover {
-    background-color: rgb(200, 218, 129);
+    background-color: #e3e5de;
 }
 
 body{
   background: url() ;
- background-color: antiquewhite;
+ background-color:#FFF4E0;
 }
 
 .remove-btn{
   color: black;
-  background-color:  rgb(200, 218, 129)  ;
+  background-color:  #d9ead9; 
+   border-radius: 8px; 
 }
 
 .remove-btn:hover{

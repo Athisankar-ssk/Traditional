@@ -15,11 +15,12 @@
    left: 0;
    width: 100%;
    padding: 0px 10%;
-   background-color: rgb(255, 251, 127);
+   background-color: #263238;
    display: flex;
    justify-content: space-between;
    align-items: center;
    z-index: 100;
+    background-color: #49854c
 }
 
 .logo{
@@ -34,6 +35,7 @@
     color: black;
     font-weight: 500;
     margin-left: 40px;
+    
 }
 
 .navbar a::before{
