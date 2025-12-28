@@ -10,24 +10,30 @@ import Sevalai from './assets/Sevalai.jpg'
 import Theni from './assets/Theni.jpeg'
 import Veera from './assets/Veera.jpeg'
 import Jallikattu from './jalli'
+import { useState } from 'react'
 function JallikattuLists(){
 
-    const JallikattLine=[
-           {BullName:"கரூர் வெள்ளை", img:Vellaiyan ,OwnerName:"எஸ்.பி குமார்", District:"கரூர் மாவட்டம்", vetri:"details"},
-           {BullName:"செவாலை", img:Sevalai, OwnerName:"ப.ராஜசேகர்", District:"மதுரை மாவட்டம்", vetri:"details" },
-           {BullName:"வெள்ளையன்", img:Khansai, OwnerName:"எஸ்.சுரேஷ் குமார்", District:"கான்சாபுரம்" , vetri:"details"},
-           {BullName:"பேட்டைக்காளி", img:Pettaikali, OwnerName:"செந்தில் தொண்டமான்", District:"இலங்கை" , vetri:"details"},
-           { BullName:"கொம்பன்", img:Komban, OwnerName:"சி.விஜயபாஸ்கர்", District:"புதுக்கோட்டை மாவட்டம்" , vetri:"details"},
-           {BullName:"அப்பு", img:Appu, OwnerName:"ப.ராஜசேகர்", District:"மதுரை மாவட்டம்" , vetri:"details"},
-           {BullName:"அசுரன்", img:Theni, OwnerName:"G கார்த்தி", District:"தேனி மாவட்டம்" , vetri:"details"},
-           { BullName:"காரி", img:Kaari, OwnerName:"ப.ராஜசேகர்", District:"மதுரை மாவட்டம்" , vetri:"details"},
-           {BullName:"மருது", img:Maruthu, OwnerName:"டேவிட்", District:"புதுக்கோட்டை மாவட்டம்" , vetri:"details"},
-            {BullName:"வெற்றி", img:Veera, OwnerName:"எஸ்.சுரேஷ் குமார்", District:"கான்சாபுரம்" , vetri:"details"}
+    const [JallikattLine, setJallikattLine]=useState([
+           {Bullid:1 ,BullName:"கரூர் வெள்ளை", img:Vellaiyan ,OwnerName:"எஸ்.பி குமார்", District:"கரூர் மாவட்டம்", vetri:"details"},
+           {Bullid:2, BullName:"செவாலை", img:Sevalai, OwnerName:"ப.ராஜசேகர்", District:"மதுரை மாவட்டம்", vetri:"details" },
+           {Bullid:3, BullName:"வெள்ளையன்", img:Khansai, OwnerName:"எஸ்.சுரேஷ் குமார்", District:"கான்சாபுரம்" , vetri:"details"},
+           {Bullid:4, BullName:"பேட்டைக்காளி", img:Pettaikali, OwnerName:"செந்தில் தொண்டமான்", District:"இலங்கை" , vetri:"details"},
+           {Bullid:5, BullName:"கொம்பன்", img:Komban, OwnerName:"சி.விஜயபாஸ்கர்", District:"புதுக்கோட்டை மாவட்டம்" , vetri:"details"},
+           {Bullid:6, BullName:"அப்பு", img:Appu, OwnerName:"ப.ராஜசேகர்", District:"மதுரை மாவட்டம்" , vetri:"details"},
+           {Bullid:7, BullName:"அசுரன்", img:Theni, OwnerName:"G கார்த்தி", District:"தேனி மாவட்டம்" , vetri:"details"},
+           {Bullid:8, BullName:"காரி", img:Kaari, OwnerName:"ப.ராஜசேகர்", District:"மதுரை மாவட்டம்" , vetri:"details"},
+           {Bullid:9, BullName:"மருது", img:Maruthu, OwnerName:"டேவிட்", District:"புதுக்கோட்டை மாவட்டம்" , vetri:"details"},
+           {Bullid:10,BullName:"வெற்றி", img:Veera, OwnerName:"எஸ்.சுரேஷ் குமார்", District:"கான்சாபுரம்" , vetri:"details"}
 
-    ]   
+    ])   
 
-    const BUllList=JallikattLine.map((bull , index)=>
-        <Jallikattu key={index} BullName={bull.BullName} img={bull.img} OwnerName={bull.OwnerName} District={bull.District} vetri={bull.vetri} />
+    function handleRemove(Bullid){
+        const BUllDelete=JallikattLine.filter(bull => bull.Bullid !== Bullid)
+        setJallikattLine(BUllDelete);
+    }
+
+    const BUllList=JallikattLine.map((bull)=>
+        <Jallikattu Bullid={bull.Bullid} BullName={bull.BullName} img={bull.img} OwnerName={bull.OwnerName} District={bull.District} vetri={bull.vetri} remove={handleRemove} />
     )
 
  return(
