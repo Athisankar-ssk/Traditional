@@ -45,3 +45,10 @@ body{
 .remove-btn:hover{
   cursor: pointer;
 }
+
+.Bull img {
+  width: 180px;        
+  height: 180px;      
+  object-fit: contain; 
+  margin: 0 auto;
+}

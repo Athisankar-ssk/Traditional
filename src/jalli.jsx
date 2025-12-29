@@ -29,7 +29,7 @@ function Jallikattu(props) {
           <button className="remove-btn" onClick={() => props.remove(props.Bullid)}>Remove</button>
         </div>
       </div>
-    )
+    ) 
   );
 }
 
