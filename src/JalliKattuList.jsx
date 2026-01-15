@@ -14,7 +14,7 @@ import { useState } from 'react'
 function JallikattuLists(){
 
     const [JallikattLine, setJallikattLine]=useState([
-           {Bullid:1 ,BullName:"கரூர் வெள்ளை", img:Vellaiyan ,OwnerName:"எஸ்.பி குமார்", District:"கரூர் மாவட்டம்", vetri:"details"},
+           {Bullid:1 ,BullName:"கரூர் வெள்ளை", img:Vellaiyan ,OwnerName:"S.P குமார்", District:"கரூர் மாவட்டம்", vetri:"details"},
            {Bullid:2, BullName:"செவாலை", img:Sevalai, OwnerName:"ப.ராஜசேகர்", District:"மதுரை மாவட்டம்", vetri:"details" },
            {Bullid:3, BullName:"வெள்ளையன்", img:Khansai, OwnerName:"S.சுரேஷ் குமார்(SSK)", District:"கான்சாபுரம்" , vetri:"details"},
            {Bullid:4, BullName:"பேட்டைக்காளி", img:Pettaikali, OwnerName:"செந்தில் தொண்டமான்", District:"இலங்கை" , vetri:"details"},
