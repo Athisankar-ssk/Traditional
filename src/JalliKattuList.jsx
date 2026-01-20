@@ -23,7 +23,7 @@ function JallikattuLists(){
            {Bullid:7, BullName:"அசுரன்", img:Theni, OwnerName:"G.கார்த்தி", District:"தேனி மாவட்டம்" , vetri:"details"},
            {Bullid:8, BullName:"காரி", img:Kaari, OwnerName:"ப.ராஜசேகர்", District:"மதுரை மாவட்டம்" , vetri:"details"},
            {Bullid:9, BullName:"மருது", img:Maruthu, OwnerName:"டேவிட்", District:"புதுக்கோட்டை மாவட்டம்" , vetri:"details"},
-           {Bullid:10,BullName:"வெற்றி", img:Veera, OwnerName:"S.சுரேஷ் குமார்(SSK)", District:"கான்சாபுரம்" , vetri:"details"}
+           {Bullid:10,BullName:"வெற்றி", img:Veera, OwnerName:"S.சுரேஷ் குமார்", District:"கான்சாபுரம்" , vetri:"details"}
 
     ])   
 
